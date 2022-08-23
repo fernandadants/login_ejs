@@ -11,8 +11,6 @@ class SessionController{
         }
         const{email, senha} = req.body;
 
-        console.log(email);
-
         //Testar se usuário existe
         if (!(email === user.email)) {
             req.session.logado = false;

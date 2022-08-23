@@ -8,7 +8,7 @@ const routes = new Router();
 //Definindo rotas
 routes.get('/', Home.index);
 routes.post('/logar', Session.logar);
-routes.get('/home', auth, Session.home);
+routes.get('/home', Session.home);
 routes.get('/logout', Session.logout);
 
 routes.get('/', (req, res) => {
