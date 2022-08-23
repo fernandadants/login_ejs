@@ -41,6 +41,8 @@ var hostname = "localhost";
 const port = 3000;
 
 //Abrindo servidor
+//Iniciando servidor na porta definida
+//A função não é necessária, servindo apenas como auxiliar.
 app.listen(port, ()=>{
     console.log(`Servidor iniciado em http://${hostname}:${port}`);
 });
