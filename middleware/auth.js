@@ -1,0 +1,8 @@
+const auth = (req, res, next) => {
+    if (req.session.logado){
+        next();
+    }else{
+        return res.redirect('/index');
+    }
+}
+module.exports = auth;
