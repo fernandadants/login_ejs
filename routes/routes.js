@@ -10,6 +10,7 @@ routes.get('/', Home.index);
 routes.post('/logar', Session.logar);
 routes.get('/home', Session.home);
 routes.get('/logout', Session.logout);
+routes.get('/usuarios', Home.usuarios);
 
 routes.get('/', (req, res) => {
     res.render('pages/index')

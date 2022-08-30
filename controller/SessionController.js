@@ -23,7 +23,7 @@ class SessionController{
         }
         req.session.logado = true;
         return res.redirect('/home');
-        }
+    }
 
         logout(req, res) {
         req.session.logado = false;
